@@ -24,7 +24,8 @@ jobs:
         run: npm install -g @postmate/cli
 
       - name: Run School collection (QA)
-        run: pmc run ".postmate/collections/School.json" --env QA
+        working-directory: .postmate
+        run: pmc run "collections/School.json" --env QA
 
       - name: Upload report
         if: always()

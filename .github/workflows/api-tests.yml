@@ -32,4 +32,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: postmate-report
-          path: .postmate/reports/
+          path: .postmate/reports/report.School*.html

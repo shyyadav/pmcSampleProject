@@ -5,7 +5,7 @@
   "folders": [],
   "requests": [
     {
-      "url": "https://api.mithilaschool.com/users/login",
+      "url": "{{baseUrl}}/users/login",
       "method": "POST",
       "headers": {
         "accept": "*/*",
@@ -14,8 +14,8 @@
       },
       "body": {
         "json": {
-          "email": "m4@mithilaschool.com",
-          "password": "Test@123"
+          "email": "{{email}}",
+          "password": "{{password}}"
         }
       },
       "tests": [],
@@ -35,7 +35,7 @@
       "dataTags": []
     },
     {
-      "url": "https://api.mithilaschool.com/client",
+      "url": "{{baseUrl}}/client",
       "method": "GET",
       "headers": {
         "accept": "*/*",
@@ -61,7 +61,7 @@
           "requestId": "532c1d00-5beb-482e-aa6f-ea331baa6979"
         }
       ],
-      "testScript": "if (true) {\nconsole.log(\"sfdsfsf\");\nconsole.log(\"abc\");\n}\npm.test('Verify schoolname', () => {\npm.expect(RESPONSE.body.school.schoolName).to.eql(\"ABC Learning Academy \");\n});",
+      "testScript": "if (true) {\nconsole.log(\"sfdsfsf\");\nconsole.log(\"abc\");\n}\npm.test('Verify schoolname', () => {\npm.expect(RESPONSE.body.school.schoolName).to.eql(\"ABC Learning Academy \");\n});\n\npm.test('Verify isAutoInvoice is true', () => {\n    pm.expect(RESPONSE.body.school.isAutoInvoice).to.eql(true)\n})",
       "preRequestScript": "",
       "auth": {
         "type": "none"
@@ -70,7 +70,7 @@
       "dataTags": []
     },
     {
-      "url": "https://api.mithilaschool.com/student",
+      "url": "{{baseUrl}}/student",
       "method": "GET",
       "headers": {
         "accept": "*/*",
@@ -96,7 +96,7 @@
           "requestId": "532c1d00-5beb-482e-aa6f-ea331baa6979"
         }
       ],
-      "testScript": "",
+      "testScript": "\npm.test(\"Status code is 200\", function () {\n    pm.expect(RESPONSE.status).to.equal(200);\n});\n\npm.test(\"students exists\", function () {\n    pm.expect(RESPONSE.body.students).to.exist;\n});\n",
       "preRequestScript": "",
       "auth": {
         "type": "none"

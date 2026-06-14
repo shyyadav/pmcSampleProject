@@ -25,7 +25,7 @@ jobs:
 
       - name: Run School collection (QA)
         working-directory: .postmate
-        run: pmc run School QA -r report
+        run: pmc run -c School -e QA -d datatable -r report
 
       - name: Upload report
         if: always()

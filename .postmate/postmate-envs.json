@@ -5,6 +5,9 @@
   "test": {
     "dataTableName": "dataTable"
   },
-  "activeEnv": "test",
-  "QA": {}
+  "activeEnv": "QA",
+  "QA": {
+    "baseUrl": "https://api.mithilaschool.com",
+    "dataTableName": "dataTable"
+  }
 }

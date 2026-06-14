@@ -1,0 +1,109 @@
+{
+  "id": "ab9aed3c-7c88-4f02-8b7c-54dfe4d846f9",
+  "collectionName": "School-main",
+  "creatredOn": "2026-06-01T21:22:10.212Z",
+  "folders": [],
+  "requests": [
+    {
+      "url": "https://api.mithilaschool.com/users/login",
+      "method": "POST",
+      "headers": {
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com",
+        "content-type": "application/json"
+      },
+      "body": {
+        "json": {
+          "email": "m4@mithilaschool.com",
+          "password": "Test@123"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "pm.setVariable('token', RESPONSE.body.accessToken);",
+      "id": "49aab0fe-65f8-4485-9b1c-3b95442f41a9",
+      "name": "getToken",
+      "collectionId": "ab9aed3c-7c88-4f02-8b7c-54dfe4d846f9",
+      "containerId": "ab9aed3c-7c88-4f02-8b7c-54dfe4d846f9",
+      "collectionName": "School-main",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "id": "0dd4b2b0-edfc-4df8-9d9b-84dc9724d81c",
+      "collectionId": "ab9aed3c-7c88-4f02-8b7c-54dfe4d846f9",
+      "containerId": "ab9aed3c-7c88-4f02-8b7c-54dfe4d846f9",
+      "collectionName": "School-main",
+      "name": "getClient",
+      "url": " https://api.mithilaschool.com/client",
+      "method": "GET",
+      "headers": {
+        "authorization": "Bearer {{token}}",
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com"
+      },
+      "body": {
+        "json": {}
+      },
+      "tests": [],
+      "bodyFromat": "json",
+      "testScript": "if (true) {\n    console.log(\"sfdsfsf\");\n    console.log(\"abc\");\n}\npm.test('Verify schoolname', () => {\n    pm.expect(RESPONSE.body.school.schoolName).to.eql(\"ABC Learning Academy \");\n});\n",
+      "bodyFormat": "json",
+      "preRequestScript": "",
+      "preRequests": [
+        {
+          "collectionId": "ab9aed3c-7c88-4f02-8b7c-54dfe4d846f9",
+          "collectionName": "School-main",
+          "requestId": "49aab0fe-65f8-4485-9b1c-3b95442f41a9"
+        }
+      ],
+      "auth": {
+        "type": "none"
+      },
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "id": "71e70945-d946-445b-84d5-c06abe76c183",
+      "collectionId": "ab9aed3c-7c88-4f02-8b7c-54dfe4d846f9",
+      "containerId": "ab9aed3c-7c88-4f02-8b7c-54dfe4d846f9",
+      "collectionName": "School-main",
+      "name": "Students",
+      "url": " https://api.mithilaschool.com/student",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com",
+        "authorization": "Bearer {{token}}"
+      },
+      "body": {
+        "json": {}
+      },
+      "tests": [],
+      "bodyFromat": "json",
+      "testScript": "",
+      "bodyFormat": "json",
+      "preRequestScript": "",
+      "preRequests": [
+        {
+          "collectionId": "ab9aed3c-7c88-4f02-8b7c-54dfe4d846f9",
+          "collectionName": "School-main",
+          "requestId": "49aab0fe-65f8-4485-9b1c-3b95442f41a9"
+        }
+      ],
+      "auth": {
+        "type": "none"
+      },
+      "cookies": [],
+      "dataTags": []
+    }
+  ]
+}

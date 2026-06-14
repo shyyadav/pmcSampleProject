@@ -1,0 +1,219 @@
+{
+  "id": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+  "collectionName": "curlImportTest",
+  "creatredOn": "2026-06-02T02:20:44.618Z",
+  "folders": [],
+  "requests": [
+    {
+      "url": "https://api.mithilaschool.com/users/login",
+      "method": "POST",
+      "headers": {
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com",
+        "content-type": "application/json"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "e349963d-6f01-4791-880d-bf63246021de",
+      "name": "json",
+      "collectionId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "containerId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "collectionName": "curlImportTest",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "updateTitle": true,
+      "bodyFormat": "json",
+      "body": {
+        "json": {
+          "email": "m4@mithilaschool.com",
+          "password": "Test@123"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "url": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+      "method": "POST",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "text/xml; charset=utf-8",
+        "user-agent": "https://postmateclient.com"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "72bfd778-fb46-4dda-81fb-5a686c058c8e",
+      "name": "xml",
+      "collectionId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "containerId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "collectionName": "curlImportTest",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "updateTitle": true,
+      "bodyFormat": "xml",
+      "body": {
+        "json": {},
+        "xml": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\n      <ubiNum>42</ubiNum>\n    </NumberToWords>\n  </soap:Body>\n</soap:Envelope>",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "url": "https://httpbin.org/post",
+      "method": "POST",
+      "headers": {
+        "content-type": "application/x-www-form-urlencoded",
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "pm.test(\"form fields parsed correctly\", () => {\n  const json = RESPONSE.body\n  pm.expect(json.form.username).to.eql(\"shyam\");\n  pm.expect(json.form.plan).to.eql(\"pro\");\n});",
+      "id": "435d816b-9fa3-4736-a0f7-fd0b7703de35",
+      "name": "urlencode",
+      "collectionId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "containerId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "collectionName": "curlImportTest",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "updateTitle": true,
+      "bodyFormat": "x-www-form-urlencoded",
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {
+          "username": "shyam",
+          "email": "shyam@postmateclient.com",
+          "plan": "pro",
+          "price": "49.99"
+        },
+        "plainText": "",
+        "plaintext": ""
+      },
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "url": "https://httpbin.org/post",
+      "method": "POST",
+      "headers": {
+        "content-type": "text/plain",
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "\npm.test(\"text body echoed correctly\", () => {\n  pm.expect(RESPONSE.body.data).to.eql(\"Hello from Postmate Client! Testing plain text body.\");\n});",
+      "id": "5eae13d8-1442-4600-b186-55a56ff2dc94",
+      "name": "text",
+      "collectionId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "containerId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "collectionName": "curlImportTest",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "updateTitle": true,
+      "bodyFormat": "plaintext",
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": "",
+        "plaintext": "Hello from Postmate Client! Testing plain text body."
+      },
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "url": "https://httpbin.org/robots.txt",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "\npm.test(\"response status\", () => {\n    console.log(RESPONSE.status)\n    pm.expect(RESPONSE.status).to.eql(200);\n\n});\n\npm.test(\"response is plain text\", () => {\n   pm.expect(RESPONSE.body).to.include(\"User-agent\");\n\n});\n//  pm.expect(RESPONSE.rawBody).to.include(\"User-agent\");\nRESPONSE.",
+      "id": "060bd95f-ca7e-4dbe-a39b-e75cfa5d7eb1",
+      "name": "text-body",
+      "collectionId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "containerId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "collectionName": "curlImportTest",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "updateTitle": true,
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "bodyFormat": "json",
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "url": "https://httpbin.org/post",
+      "method": "POST",
+      "headers": {
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "pm.test(\"form data sent correctly\", () => {\n  pm.expect(RESPONSE.status).to.eql(200);\n  pm.expect(RESPONSE.body.form.username).to.eql(\"shyam\");\n  pm.expect(RESPONSE.body.form.plan).to.eql(\"pro\");\n});",
+      "id": "4e7672b4-1990-41fa-b0f1-3e5c9f94f8be",
+      "name": "formdata",
+      "collectionId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "containerId": "d7333cd0-b7fb-4ad2-9dc5-2c8e1448ccb2",
+      "collectionName": "curlImportTest",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "updateTitle": true,
+      "bodyFormat": "multipart",
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": "",
+        "multipart": [
+          {
+            "key": "username",
+            "value": "shyam",
+            "isFile": false
+          },
+          {
+            "key": "email",
+            "value": "shyam@postmateclient.com",
+            "isFile": false
+          },
+          {
+            "key": "plan",
+            "value": "pro",
+            "isFile": false
+          }
+        ]
+      },
+      "cookies": [],
+      "dataTags": []
+    }
+  ]
+}

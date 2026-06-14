@@ -1,0 +1,232 @@
+{
+  "runId": "971877e2-5586-4a0a-a483-0cedaf780918",
+  "startedAt": "2026-06-02T03:00:17.119Z",
+  "environment": "test",
+  "summary": {
+    "totalRequests": 6,
+    "totalTests": 3,
+    "passed": 3,
+    "failed": 0
+  },
+  "requests": [
+    {
+      "iteration": 0,
+      "name": "json",
+      "method": "POST",
+      "url": "https://api.mithilaschool.com/users/login",
+      "status": 200,
+      "durationMs": 377,
+      "response": {
+        "body": {
+          "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyZDhhYjhkNC00ZmJjLTQzZTAtYjQ1Ni1iNjlkNWIzODM4ZTUiLCJqdGkiOiJmYzc2MDBhNC00MzY2LTRmNmUtYmMzZS01NGY3YjQ2ZWNiNWYiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjJkOGFiOGQ0LTRmYmMtNDNlMC1iNDU2LWI2OWQ1YjM4MzhlNSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im00QG1pdGhpbGFzY2hvb2wuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU2Nob29sT3duZXIiLCJleHAiOjE3ODAzNzEwMTYsImlzcyI6Imh0dHBzOi8vYXBpLm1pdGhpbGFzY2hvb2wuY29tIiwiYXVkIjoiaHR0cHM6Ly9jbGllbnQubWl0aGlsYXNjaG9vbC5jb20vIn0.3HH0oDZqYOci6WpRgDUK8_JRkfW3_aBfyRoC1D7dG48",
+          "roles": "SchoolOwner"
+        },
+        "headers": {
+          "connection": "close",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Tue, 02 Jun 2026 03:00:16 GMT",
+          "server": "nginx/1.24.0 (Ubuntu)",
+          "transfer-encoding": "chunked"
+        }
+      },
+      "tests": [],
+      "data": {}
+    },
+    {
+      "iteration": 0,
+      "name": "xml",
+      "method": "POST",
+      "url": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+      "status": 200,
+      "durationMs": 266,
+      "response": {
+        "body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <m:NumberToWordsResponse xmlns:m=\"http://www.dataaccess.com/webservicesserver/\">\r\n      <m:NumberToWordsResult>forty two </m:NumberToWordsResult>\r\n    </m:NumberToWordsResponse>\r\n  </soap:Body>\r\n</soap:Envelope>",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "cache-control": "private, max-age=0",
+          "connection": "close",
+          "content-encoding": "gzip",
+          "content-length": "311",
+          "content-security-policy": "default-src * data: 'unsafe-inline' 'unsafe-eval'; form-action 'self'; frame-ancestors 'self';",
+          "content-type": "text/xml; charset=utf-8",
+          "date": "Tue, 02 Jun 2026 03:00:16 GMT",
+          "permissions-policy": "interest-cohort=(); fullscreen=(self)",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "server": "Server",
+          "strict-transport-security": "max-age=15768000;includeSubdomains",
+          "tdm-reservation": "1",
+          "vary": "Accept-Encoding",
+          "web-service": "DataFlex 19.1",
+          "x-content-type-options": "nosniff",
+          "x-powered-by": "ASP.NET",
+          "x-robots-tag": "noai, noimageai"
+        }
+      },
+      "tests": [],
+      "data": {}
+    },
+    {
+      "iteration": 0,
+      "name": "urlencode",
+      "method": "POST",
+      "url": "https://httpbin.org/post",
+      "status": 200,
+      "durationMs": 245,
+      "response": {
+        "body": {
+          "args": {},
+          "data": "",
+          "files": {},
+          "form": {
+            "email": "shyam@postmateclient.com",
+            "plan": "pro",
+            "price": "49.99",
+            "username": "shyam"
+          },
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Content-Length": "68",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Host": "httpbin.org",
+            "User-Agent": "https://postmateclient.com",
+            "X-Amzn-Trace-Id": "Root=1-6a1e4741-7568cfde0261a2cb1177d4b6"
+          },
+          "json": null,
+          "origin": "65.36.110.118",
+          "url": "https://httpbin.org/post"
+        },
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "*",
+          "connection": "close",
+          "content-length": "578",
+          "content-type": "application/json",
+          "date": "Tue, 02 Jun 2026 03:00:17 GMT",
+          "server": "gunicorn/19.9.0"
+        }
+      },
+      "tests": [
+        {
+          "description": "form fields parsed correctly",
+          "status": "Passed"
+        }
+      ],
+      "data": {}
+    },
+    {
+      "iteration": 0,
+      "name": "text",
+      "method": "POST",
+      "url": "https://httpbin.org/post",
+      "status": 200,
+      "durationMs": 188,
+      "response": {
+        "body": {
+          "args": {},
+          "data": "Hello from Postmate Client! Testing plain text body.",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Content-Length": "52",
+            "Content-Type": "text/plain",
+            "Host": "httpbin.org",
+            "User-Agent": "https://postmateclient.com",
+            "X-Amzn-Trace-Id": "Root=1-6a1e4741-14f6210e0f9ad96160cd6957"
+          },
+          "json": null,
+          "origin": "65.36.110.118",
+          "url": "https://httpbin.org/post"
+        },
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "*",
+          "connection": "close",
+          "content-length": "495",
+          "content-type": "application/json",
+          "date": "Tue, 02 Jun 2026 03:00:17 GMT",
+          "server": "gunicorn/19.9.0"
+        }
+      },
+      "tests": [
+        {
+          "description": "text body echoed correctly",
+          "status": "Passed"
+        }
+      ],
+      "data": {}
+    },
+    {
+      "iteration": 0,
+      "name": "text-body",
+      "method": "GET",
+      "url": "https://httpbin.org/robots.txt",
+      "status": 200,
+      "durationMs": 181,
+      "response": {
+        "body": "User-agent: *\nDisallow: /deny\n",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "*",
+          "connection": "close",
+          "content-length": "30",
+          "content-type": "text/plain",
+          "date": "Tue, 02 Jun 2026 03:00:17 GMT",
+          "server": "gunicorn/19.9.0"
+        }
+      },
+      "tests": [],
+      "data": {}
+    },
+    {
+      "iteration": 0,
+      "name": "formdata",
+      "method": "POST",
+      "url": "https://httpbin.org/post",
+      "status": 200,
+      "durationMs": 192,
+      "response": {
+        "body": {
+          "args": {},
+          "data": "",
+          "files": {},
+          "form": {
+            "email": "shyam@postmateclient.com",
+            "plan": "pro",
+            "username": "shyam"
+          },
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Content-Length": "402",
+            "Content-Type": "multipart/form-data; boundary=--------------------------b12e3bdd4b93afd153e6f862",
+            "Host": "httpbin.org",
+            "User-Agent": "https://postmateclient.com",
+            "X-Amzn-Trace-Id": "Root=1-6a1e4741-789ce7db2a06b95744e9b7f4"
+          },
+          "json": null,
+          "origin": "65.36.110.118",
+          "url": "https://httpbin.org/post"
+        },
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "*",
+          "connection": "close",
+          "content-length": "603",
+          "content-type": "application/json",
+          "date": "Tue, 02 Jun 2026 03:00:17 GMT",
+          "server": "gunicorn/19.9.0"
+        }
+      },
+      "tests": [
+        {
+          "description": "form data sent correctly",
+          "status": "Passed"
+        }
+      ],
+      "data": {}
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "a6ad1627-c78b-45d8-be72-5f2c4ba4941f",
+  "collectionName": "Stock Agent",
+  "creatredOn": "2026-06-07T23:46:34.081Z",
+  "folders": [],
+  "requests": [
+    {
+      "url": "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=NVDA&apikey=RKSG1OY340NR76UH",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "cbd8e0fb-46b9-40da-99c7-d0dc29535b33",
+      "name": "alphavantage",
+      "collectionId": "a6ad1627-c78b-45d8-be72-5f2c4ba4941f",
+      "containerId": "a6ad1627-c78b-45d8-be72-5f2c4ba4941f",
+      "collectionName": "Stock Agent",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "cookies": [],
+      "dataTags": [],
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    }
+  ]
+}

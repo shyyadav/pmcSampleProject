@@ -1,0 +1,9 @@
+{
+  "dataTables": [
+    "dataTable"
+  ],
+  "test": {
+    "dataTableName": "dataTable"
+  },
+  "activeEnv": "test"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "62214f4b-7a17-4569-9f96-8696c6a613d6",
+  "collectionName": "School",
+  "creatredOn": "2026-06-05T19:26:07.621Z",
+  "folders": [],
+  "requests": [
+    {
+      "url": "https://api.mithilaschool.com/users/login",
+      "method": "POST",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json",
+        "user-agent": "https://postmateclient.com"
+      },
+      "body": {
+        "json": {
+          "email": "m4@mithilaschool.com",
+          "password": "Test@123"
+        }
+      },
+      "tests": [],
+      "id": "532c1d00-5beb-482e-aa6f-ea331baa6979",
+      "name": "getToken",
+      "collectionId": "62214f4b-7a17-4569-9f96-8696c6a613d6",
+      "containerId": "62214f4b-7a17-4569-9f96-8696c6a613d6",
+      "collectionName": "School",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "pm.setVariable('token', RESPONSE.body.accessToken);",
+      "preRequestScript": "",
+      "auth": {
+        "type": "none"
+      },
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "url": "https://api.mithilaschool.com/client",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json",
+        "authorization": "Bearer {{token}}",
+        "user-agent": "https://postmateclient.com"
+      },
+      "body": {
+        "plainText": "",
+        "json": {}
+      },
+      "tests": [],
+      "id": "1a0e0406-1773-4659-89f9-0b3a977100b5",
+      "name": "getClient",
+      "collectionId": "62214f4b-7a17-4569-9f96-8696c6a613d6",
+      "containerId": "62214f4b-7a17-4569-9f96-8696c6a613d6",
+      "collectionName": "School",
+      "bodyFormat": "json",
+      "preRequests": [
+        {
+          "collectionId": "62214f4b-7a17-4569-9f96-8696c6a613d6",
+          "collectionName": "School",
+          "requestId": "532c1d00-5beb-482e-aa6f-ea331baa6979"
+        }
+      ],
+      "testScript": "if (true) {\nconsole.log(\"sfdsfsf\");\nconsole.log(\"abc\");\n}\npm.test('Verify schoolname', () => {\npm.expect(RESPONSE.body.school.schoolName).to.eql(\"ABC Learning Academy \");\n});",
+      "preRequestScript": "",
+      "auth": {
+        "type": "none"
+      },
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "url": "https://api.mithilaschool.com/student",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json",
+        "user-agent": "https://postmateclient.com",
+        "authorization": "Bearer {{token}}"
+      },
+      "body": {
+        "plainText": "",
+        "json": {}
+      },
+      "tests": [],
+      "id": "c0801ec8-5b19-4057-b81c-bff486ba3f09",
+      "name": "Students",
+      "collectionId": "62214f4b-7a17-4569-9f96-8696c6a613d6",
+      "containerId": "62214f4b-7a17-4569-9f96-8696c6a613d6",
+      "collectionName": "School",
+      "bodyFormat": "json",
+      "preRequests": [
+        {
+          "collectionId": "62214f4b-7a17-4569-9f96-8696c6a613d6",
+          "collectionName": "School",
+          "requestId": "532c1d00-5beb-482e-aa6f-ea331baa6979"
+        }
+      ],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {
+        "type": "none"
+      },
+      "cookies": [],
+      "dataTags": []
+    }
+  ],
+  "isFormatted": true,
+  "displayOrder": 1000
+}

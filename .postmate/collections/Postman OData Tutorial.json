@@ -1,0 +1,606 @@
+{
+  "id": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+  "collectionName": "Postman OData Tutorial",
+  "creatredOn": "2026-06-10T01:54:43.954Z",
+  "folders": [],
+  "requests": [
+    {
+      "url": "http://services.odata.org/V4/TripPinService/",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json",
+        "user-agent": "https://postmateclient.com"
+      },
+      "body": {
+        "plainText": "",
+        "json": {}
+      },
+      "tests": [],
+      "id": "b22b7535-8253-4dd8-92a4-5354290d9c7e",
+      "name": "01. Read the service root",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {
+        "type": "none"
+      },
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/$metadata",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "245489cc-2f2f-4aac-ad8c-cb159dff2b1b",
+      "name": "02. Read the service metadata",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "bc07c1f2-e0fb-436b-90b0-e1e7633e8b6c",
+      "name": "03. Read an entity set",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People('russellwhyte')",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "e45582de-a801-4a27-b9fe-9140dbbebf64",
+      "name": "04. Get a single entity from an entity set",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People('russellwhyte')/FirstName",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "3b4e6391-2438-4fbf-8e9f-9f2958dd71a6",
+      "name": "05. Get a primitive property",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People('russellwhyte')/FirstName/$value",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "4e120990-bd55-41ba-96b9-21f63c3e10cd",
+      "name": "06. Get the raw value of a primitive property",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People('russellwhyte')/Friends('scottketchum')/AddressInfo",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "8d67a9a5-bffa-4230-9127-8e58e7e11edc",
+      "name": "07. Navigate to related entities",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People?$filter=FirstName eq 'Vincent'",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "7f9ec170-4c6c-4f3f-bda5-20b117697b72",
+      "name": "08. Filter a collection",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People?$filter=Gender eq Microsoft.OData.SampleService.Models.TripPin.PersonGender'Female'",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "ddacbcf3-3c66-4bba-904c-ea5a002e0fd0",
+      "name": "09. Filter on enumeration properties",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/Airports?$filter=Location/City/Region eq 'California'",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "bc646cd8-d032-4055-88b3-2759f2887d75",
+      "name": "10. Filter on nested structures",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People?$filter=not(contains(FirstName,'Q')) and (AddressInfo/any(ai:ai/City/Region eq 'WA') or AddressInfo/any(ai:ai/City/Region eq 'ID'))",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "78731df6-5141-40a8-bc84-5d9a2260007b",
+      "name": "11. Filter using logic operators",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People?$filter=Emails/any(e: endswith(e, 'contoso.com'))",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "04934457-41a2-43fe-b8c3-a7c90b7d62c9",
+      "name": "12. Filter using any/all operators",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People('russellwhyte')/Trips(0)/PlanItems/Microsoft.OData.SampleService.Models.TripPin.Flight",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "7e3f30e2-ca50-426a-afcd-aa9417d482b4",
+      "name": "13. Filter using built-in functions",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People?$orderby=length(FirstName) desc,UserName",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "ebc477ef-249a-425c-8a60-7fc3872635bc",
+      "name": "14. Sort a collection",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People?$top=2&$skip=2",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "c03a56d9-c8d0-460f-9bdc-58b82f3fe682",
+      "name": "15. Client-side paging",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People/$count",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "5a146f1e-a726-4de9-a071-b5d8801167fc",
+      "name": "16. Counting the elements in a collection",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People?$expand=Friends,Trips",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "a577c156-6665-48fb-85e2-f743f21374b7",
+      "name": "17. Expand related entities",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People?$select=FirstName,LastName",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "21965578-324b-4a85-a7b7-837873dd6284",
+      "name": "18. Select the properties",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People?$format=application/json;odata.metadata=full",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "10893e53-6787-4131-8a60-c953c9881dee",
+      "name": "19. Request full metadata",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People('russellwhyte')/Trips(0)/PlanItems/Microsoft.OData.SampleService.Models.TripPin.Flight",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "e38a4470-e5fd-4701-a31c-86c3de49812a",
+      "name": "20. Casting types",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People",
+      "method": "POST",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "UserName": "miathompson",
+          "FirstName": "Mia",
+          "LastName": "Thompson",
+          "Gender": "Female"
+        }
+      },
+      "tests": [],
+      "id": "2c915442-1760-4050-86d2-0881ddbba958",
+      "name": "21. Create an entity",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People('miathompson')",
+      "method": "DELETE",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json",
+        "If-Match": "W/\"08D2931BACB7D7FD\""
+      },
+      "body": {
+        "multipart": []
+      },
+      "tests": [],
+      "id": "3fd71ddd-a3a3-46c3-a5cc-9621203d0c23",
+      "name": "22. Delete an entity",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "multipart",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People('miathompson')",
+      "method": "PATCH",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json",
+        "If-Match": "W/\"08D2931BACB7D7FD\"",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "Emails": [
+            "miathompson@contoso.com",
+            "miathompson@example.com"
+          ]
+        }
+      },
+      "tests": [],
+      "id": "88000ce8-b0dd-47a7-b104-8f56f02f0477",
+      "name": "23. Update an entity",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/GetNearestAirport(lat = 33, lon = -118)",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "78d2d347-6b7d-43d2-a687-c7532b544d37",
+      "name": "24. Invoke an unbound function",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People('russellwhyte')/Microsoft.OData.SampleService.Models.TripPin.GetFavoriteAirline()",
+      "method": "GET",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json"
+      },
+      "body": {
+        "plainText": ""
+      },
+      "tests": [],
+      "id": "1dea4154-8431-4c80-920d-2b713848c162",
+      "name": "25. Invoke a bound function",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    },
+    {
+      "url": "http://services.odata.org/V4/TripPinService/People('russellwhyte')/Microsoft.OData.SampleService.Models.TripPin.ShareTrip",
+      "method": "POST",
+      "headers": {
+        "accept": "*/*",
+        "content-type": "application/json",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "userName": "scottketchum",
+          "tripId": 0
+        }
+      },
+      "tests": [],
+      "id": "88076ba8-4955-4edf-afae-956a4a3340d2",
+      "name": "26. Invoke a bound action",
+      "collectionId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "containerId": "a90e66f0-548b-4230-90b6-ab9bf2435bcc",
+      "collectionName": "Postman OData Tutorial",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "testScript": "",
+      "preRequestScript": "",
+      "auth": {}
+    }
+  ],
+  "isFormatted": true,
+  "displayOrder": 1000
+}

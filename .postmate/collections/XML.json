@@ -1,0 +1,100 @@
+{
+  "id": "0f38586a-09a4-45f6-8b40-e89ba1b28fa1",
+  "collectionName": "XML",
+  "creatredOn": "2026-06-01T21:26:47.755Z",
+  "folders": [],
+  "requests": [
+    {
+      "id": "5bd7a6d2-c580-47a2-82e5-8e2a10ecf37c",
+      "collectionId": "0f38586a-09a4-45f6-8b40-e89ba1b28fa1",
+      "containerId": "0f38586a-09a4-45f6-8b40-e89ba1b28fa1",
+      "collectionName": "XML",
+      "name": "xmlrequest",
+      "url": "https://httpbin.org/post",
+      "method": "POST",
+      "headers": {
+        "content-type": "application/xml",
+        "accept": "application/xml",
+        "user-agent": "https://postmateclient.com"
+      },
+      "body": {
+        "json": {},
+        "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<order>\r\n  <id>ORD-20260601</id>  <customer>    <name>Shyam Yadav</name>    <email>shyam@postmateclient.com</email>  </customer>\r\n  <items>\r\n    <item>\r\n      <sku>PMC-PRO-001</sku>\r\n      <name>Postmate Client Pro</name>\r\n      <quantity>1</quantity>\r\n      <price currency=\"USD\">49.99</price>\r\n    </item>\r\n  </items>\r\n  <total currency=\"USD\">49.99</total>\r\n  <status>pending</status>\r\n</order>"
+      },
+      "tests": [],
+      "bodyFromat": "json",
+      "testScript": "",
+      "bodyFormat": "xml",
+      "preRequestScript": "",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "url": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+      "method": "POST",
+      "headers": {
+        "content-type": "text/xml; charset=utf-8",
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com"
+      },
+      "body": {
+        "json": {},
+        "xml": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\n      <ubiNum>42</ubiNum>\n    </NumberToWords>\n  </soap:Body>\n</soap:Envelope>",
+        "x-www-form-urlencoded": {},
+        "plainText": "",
+        "multipart": []
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "6705c851-f861-47ee-8f54-ea40ab54f847",
+      "name": "abc",
+      "collectionId": "0f38586a-09a4-45f6-8b40-e89ba1b28fa1",
+      "containerId": "0f38586a-09a4-45f6-8b40-e89ba1b28fa1",
+      "collectionName": "XML",
+      "bodyFormat": "xml",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "updateTitle": true,
+      "cookies": [],
+      "dataTags": []
+    },
+    {
+      "url": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+      "method": "POST",
+      "headers": {
+        "content-type": "text/xml; charset=utf-8",
+        "accept": "*/*",
+        "user-agent": "https://postmateclient.com"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "1448ef94-38ba-4725-804b-5f23f7d8a4e8",
+      "name": "Abc1",
+      "collectionId": "0f38586a-09a4-45f6-8b40-e89ba1b28fa1",
+      "containerId": "0f38586a-09a4-45f6-8b40-e89ba1b28fa1",
+      "collectionName": "XML",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "updateTitle": true,
+      "bodyFormat": "xml",
+      "body": {
+        "json": {},
+        "xml": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\n      <ubiNum>42</ubiNum>\n    </NumberToWords>\n  </soap:Body>\n</soap:Envelope>",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "cookies": [],
+      "dataTags": []
+    }
+  ]
+}
